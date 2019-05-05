@@ -38,5 +38,44 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+let logo = document.getElementById("logo-img").setAttribute('src', siteContent["nav"]["img-src"]);
+
+let ctaImg = document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-src"]);
+
+let midImg = document.getElementById("middle-img").setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+let nav = document.querySelectorAll("nav a");
+
+
+let navbar = document.querySelector("nav")
+let a1 = document.createElement("a")
+let a2 = document.createElement("a")
+
+
+a1.innerHTML = "Portfolio"
+a2.innerHTML = "Prices"
+a1.style.color = "green"
+a2.style.color = "green"
+
+let nav1 = nav[0];
+let nav2 = nav[1];
+let nav3 = nav[2];
+let nav4 = nav[3];
+let nav5 = nav[4];
+let nav6 = nav[5];
+
+
+nav1.innerHTML = siteContent["nav"]["nav-item-1"]
+nav2.innerHTML = siteContent["nav"]["nav-item-2"]
+nav3.innerHTML = siteContent["nav"]["nav-item-3"]
+nav4.innerHTML = siteContent["nav"]["nav-item-4"]
+nav5.innerHTML = siteContent["nav"]["nav-item-5"]
+nav6.innerHTML = siteContent["nav"]["nav-item-6"]
+
+nav1.style.color = "green"
+nav2.style.color = "green"
+nav3.style.color = "green"
+nav4.style.color = "green"
+nav5.style.color = "green"
+nav6.style.color = "green"
+
